@@ -7,12 +7,15 @@ import prompt
 from brain_games.cli import welcome
 
 
+rounds = 3
+
+
 def play(game: ModuleType):
     welcome()
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     game.show_rules()
-    for _ in range(3):
+    for _ in range(rounds):
         round = game.get_round()
         print(f'Question: {round.question}')
         user_answer = prompt.string('Your answer: ')
