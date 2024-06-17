@@ -26,7 +26,7 @@ def get_round():
 
     number1, number2 = randint(1, upper_num), randint(1, upper_num)
 
-    question = ''.join(map(str, (number1, number2)))
+    question = ' '.join(map(str, (number1, number2)))
     gcd = find_gcd(number1, number2)
 
     return Round(question=question, answer=str(gcd))
