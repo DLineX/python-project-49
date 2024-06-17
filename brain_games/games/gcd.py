@@ -7,7 +7,6 @@ from typing import NamedTuple
 Round = NamedTuple('Round', [('question', str), ('answer', str)])
 
 
-
 def find_gcd(a: int, b: int):
     if a < b:
         a, b = b, a
