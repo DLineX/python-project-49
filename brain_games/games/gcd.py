@@ -17,7 +17,7 @@ def find_gcd(a: int, b: int):
 
 
 def show_rules():
-    print('Find the greatest common divisor of given numbers')
+    print('Find the greatest common divisor of given numbers.')
 
 
 def get_round():
