@@ -11,7 +11,7 @@ Round = NamedTuple('Round', [('question', str), ('answer', str)])
 
 
 def show_rules():
-    print('What is the result of the exprassion?')
+    print('What is the result of the expression?')
 
 
 def get_round():
