@@ -4,6 +4,19 @@ version = "0.1.0"
 description = "My first project"
 authors = ["Daniil Islamgaliev"]
 readme = "README.md"
+repository = https://github.com/DLineX/python-project-49
+classifiers = [
+    "Development Status :: Alpha"
+	"Environment :: Console"
+	"Framework :: Flake8"
+	"Intended Audience :: Education"
+	"License :: Free for non-commercial use"
+	"Natural Language :: Russian"
+	"Natural Language :: English"
+	"Operating System :: Microsoft :: Windows :: Windows 10"
+	"Programming Language :: Python :: 3.12"
+	"Topic :: Education"
+]
 packages = [
   { include = "brain_games" },
 ]
