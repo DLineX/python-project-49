@@ -21,9 +21,9 @@ def show_rules():
 
 
 def get_round():
-    upper_num = 100
+    UPPER_NUM = 100
 
-    number1, number2 = randint(1, upper_num), randint(1, upper_num)
+    number1, number2 = randint(1, UPPER_NUM), randint(1, UPPER_NUM)
 
     question = ' '.join(map(str, (number1, number2)))
     gcd = find_gcd(number1, number2)

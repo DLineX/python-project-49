@@ -15,13 +15,13 @@ def show_rules():
 
 
 def get_round():
-    upper_num = 100
+    UPPER_NUM = 100
 
-    operations = {'+': add, '-': sub, '*': mul}
-    number1, number2 = randint(1, upper_num), randint(1, upper_num)
-    operation_symbol = choice(tuple(operations.keys()))
+    OPERATIONS = {'+': add, '-': sub, '*': mul}
+    number1, number2 = randint(1, UPPER_NUM), randint(1, UPPER_NUM)
+    operation_symbol = choice(tuple(OPERATIONS.keys()))
 
     question = ' '.join(map(str, (number1, operation_symbol, number2)))
-    result = operations[operation_symbol](number1, number2)
+    result = OPERATIONS[operation_symbol](number1, number2)
 
     return Round(question=question, answer=str(result))

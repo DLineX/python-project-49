@@ -27,14 +27,14 @@ def get_progression_with_hidden_item(progression: list, item_index: int)\
 
 
 def get_round():
-    upper_num = 100
-    progression_item = randint(0, upper_num)
+    UPPER_NUM = 100
+    progression_item = randint(0, UPPER_NUM)
 
-    lower_lenght, upper_lenght = 5, 15
-    progression_lenght = randint(lower_lenght, upper_lenght)
+    LOWER_LENGHT, UPPER_LENGHT = 5, 15
+    progression_lenght = randint(LOWER_LENGHT, UPPER_LENGHT)
 
-    lower_step, upper_step = 1, 10
-    progression_step = randint(lower_step, upper_step)
+    LOWER_STEP, UPPER_STEP = 1, 10
+    progression_step = randint(LOWER_STEP, UPPER_STEP)
 
     progression = get_progression(
         progression_item, progression_step, progression_lenght)

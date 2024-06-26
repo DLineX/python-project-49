@@ -26,8 +26,8 @@ def is_prime(num):
 
 
 def get_round():
-    upper_num = 100
-    number = randint(2, upper_num)
+    UPPER_NUM = 100
+    number = randint(2, UPPER_NUM)
     answer = "yes" if is_prime(number) else "no"
 
     return Round(question=str(number), answer=answer)

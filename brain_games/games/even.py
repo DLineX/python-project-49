@@ -16,8 +16,8 @@ def is_even(number: int):
 
 
 def get_round():
-    upper_num = 100
+    UPPER_NUM = 100
 
-    number = randint(0, upper_num)
+    number = randint(0, UPPER_NUM)
     answer = "yes" if is_even(number) else "no"
     return Round(question=number, answer=answer)
